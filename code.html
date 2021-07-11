@@ -134,24 +134,29 @@
 
                     <h5 class="tempColor">getValue()</h5>
                     <p>
-                        getValue accepts the user input from the page. It utilizes <strong>getElementById</strong> to
-                        pull the values from the page. It passes those values to the <strong>reverseString</strong>
-                        function. The function reverseString returns an array of values and passes that array to the
-                        <strong>displayString</strong> function.
+                        <strong>getValue()</strong> functions is used to get the value from the page that is inputted by
+                        the user. This function will then call <strong>checkForPalindrome()</strong> to further check if
+                        its a palindrome. <strong>displayString()</strong> will then display content to the screen
+                        prompting the user the final outcome.
+
                     </p>
 
-                    <h5 class="tempColor">reverseString()</h5>
+                    <h5 class="tempColor">checkForPalindrome</h5>
                     <p>
-                        reverseString takes in one parameter userSting. We create a variable (revString)
-                        that holds an array. A reverse for loop is used to start at the last index and move backwards
-                        the first index of the array.
+                        This function not only reverses the string but also checks to see if its a palindrome. Some key
+                        steps here is that we must make sure the the string altered. We need to remove all special
+                        characters and make all the characters lower case. To do this we use a simple
+                        <strong>regex</strong> to remove
+                        special characters. To remove whitespace we use <strong>toLowerCase()</strong> These are some
+                        checks to but in-place to stop
+                        any unexpected bugs when comparing the two strings.
                     </p>
 
                     <h5 class="tempColor">displayString()</h5>
                     <p>
-                        displayString takes in one parameter revString. We then take the reversed array and add it to
-                        the page. Finally, we need to make the alert table visible by removing a class list from the
-                        div.</strong>.
+                        This function just takes in a parameter and passes it to the page to be displayed. The parameter
+                        here is the <strong>returnObj</strong> which not only contains the reversed string but also a
+                        message that corresponds to the correct message depending if the string is a palindrome or not.
                     </p>
 
                 </div>
