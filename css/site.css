@@ -1,6 +1,6 @@
 :root {
     --primary-color: #1d5888;
-    --secondary-color: #FFC371;
+    --secondary-color: #FFCA2B;
     --dark-color: #292929;
     --white-color: #dff3e4;
 }
@@ -68,7 +68,7 @@ footer .social>a:hover {
 /*  */
 
 .checklist>li i {
-    color: #E83A95;
+    color: #FFCA2B;
 }
 
 /* Prism */
